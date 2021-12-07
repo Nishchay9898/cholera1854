@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* General Styling */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  width: 95%;
+  margin: 40px auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+a:hover {
+  color: blue;
+}
+.charContents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Pie Chart Styles */
+.arc text {
+  font: 14px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: rgb(255, 255, 255);
+}
+
+/* Map Chart Styles */
+svg .pump {
+  fill: rgb(190, 76, 10);
+}
+
+svg .death {
+  stroke: none;
+  r: 3;
+}
+.legends {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 5px;
+  font-size: 14px;
+}
+.legends > p {
+  margin: 0px;
+}
+.legends:nth-child(n + 1) {
+  margin-top: 10px;
+}
+.pumpsCircle {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(190, 76, 10);
+  border-radius: 50%;
+}
+.deadCricle {
+  background-color: black;
+}
